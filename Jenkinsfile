@@ -11,8 +11,8 @@ pipeline {
                 }
 }
 
-  stage("Checkout from SCM")(
-          step {
+  stage("Checkout from SCM"){
+     step {
               git branch: 'main', crendentialsId: 'github', url: 'https://github.com/avinashgaikwad9441/Project1.git'
           }
 }
